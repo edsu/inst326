@@ -1,4 +1,4 @@
-# Course Materials for INST 326: Object-Oriented Programming in Python
+# INST 326: Object-Oriented Programming
 
 ## Preliminaries: Introduction to the Course and Installation
 
