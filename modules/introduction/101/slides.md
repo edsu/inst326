@@ -1,7 +1,7 @@
 ---
 title: "INST 326"
 subtitle: "Object Oriented Programing: Introduction to the Course"
-revealjs-url: ../../dependencies/reveal
+revealjs-url: ../../../lib/reveal
 theme: inst326
 transition: slide
 ---
