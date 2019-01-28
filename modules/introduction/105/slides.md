@@ -72,5 +72,5 @@ Next time we'll install some things in class.
 
 # Questions?
 
-Time?
+10:30?
 
