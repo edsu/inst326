@@ -66,7 +66,7 @@ You can find the syllabus on ELMS and also on <a href="https://edsu.github.io/in
 Next time we'll install some things in class.
 
 * [Python](https://python.org/download): for programming.
-* [Code](https://code.visualstudio.com/): for editing, terminal, REPl.
+* [Code](https://code.visualstudio.com/): for editing, terminal, REPL.
 * [Git](https://git-scm.com/): for version control.
 * [Slack](http://umd-cis.slack.com/): for group chat.
 
