@@ -43,3 +43,34 @@ You can find the syllabus on ELMS and also on <a href="https://edsu.github.io/in
 
 :::
 
+# Grades
+
+|                        |            |
+|------------------------| ---------: |
+| Exercises/Quizzes (10) |  20 points |
+| Homework (5)           |  25 points |
+| Midterms (2)           |  20 points |
+| Reflections (3)        |  10 points |
+| Final Project          |  15 points |
+| Participation          |  10 points |
+| TOTAL                  | 100 points |
+
+# Texts
+
+* Charles R. Severance, [Python for Everybody: Exploring Data Using Python 3](http://py4e.com). 
+* [The Python Tutorial](https://docs.python.org/3/tutorial/index.html), v3.7.2, Python Software Foundation.
+* [Object-Oriented Programming in Python](https://www.cs.uct.ac.za/mit_notes/python/), University of Cape Town. 
+
+# Tools
+
+Next time we'll install some things in class.
+
+* Python: for programming.
+* Visual Studio Code: for editing, terminal, REPl.
+* Git: for version control.
+* Slack: for group chat.
+
+# Questions?
+
+Time?
+
