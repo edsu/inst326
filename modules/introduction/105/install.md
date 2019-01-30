@@ -3,7 +3,12 @@ title: InstallFest!
 css: ../../../css/page.css
 ---
 
-Historically, [InstallFests] were community events where computer enthusiasts would get together to install the Linux operating system. It wasn't trivial to install Linux when it first started to get popular in the 1990s. So it was much easier if you had the help from others when you first tried to get it running. The term open source got popularized to mean really any kind of computing event where a group of people installed [open source] software.
+Historically, [InstallFests] were community events where computer enthusiasts
+would get together to install the Linux operating system. It wasn't trivial to
+install Linux when it first started to get popular in the 1990s. So it was much
+easier if you had the help from others when you first tried to get it running.
+The term InstallFest got popularized to mean really any kind of computing event
+where a group of people installed [open source] software.
 
 Today we're going to have our own InstallFest to get set up with some of the tools that we'll be using over the course of the semester.  That's right, all the tools we'll be using are freely available and open source.  It wasn't that long ago when most people thought open source was a pipe dream that would never work. It has been wildly successful, to the point now where Linux is running on most of the world's smartphones and webservers. However, the democratic or even socialist goals of the early free software and open source movement have been largely unrealized. Some think that open source software has led to even greater [concentrations of wealth] and inequality in society.
 
@@ -15,7 +20,7 @@ This is the big one since we're going to be using the Python programming languag
 
 You should find the Python3 download for your operating system when you visit this page:
 
-https://www.python.org/downloads/
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 ## Git
 
@@ -23,7 +28,7 @@ Git is the world's most popular [version control system]. Version control system
 
 Select the Git appropriate installer for your operating system here:
 
-https://git-scm.com/downloads
+[https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 
 ## Code
@@ -36,7 +41,7 @@ If you already have a text editor that you like, and are comfortable opening a t
 
 To install Code, download the installer for your  operating system here:
 
-https://code.visualstudio.com/
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 After you've installed Code, start it up and install the Python extension by going to *Preferences* -> *Extensions* and then search for "Python". You should see the *Python Extension* from Microsoft which you can install. When it prompts you which Python to use select the version we just installed v3.7.2.
 
@@ -52,7 +57,7 @@ print("hello world")
 [version control system]: https://en.wikipedia.org/wiki/Version_control
 [GitHub]: https://github.com
 [GitLab]: https://about.gitlab.com/
-[open source]: https://en.wikipedia.org/wiki/Open_source
+[open source]: https://opensource.org/osd-annotated
 [text editor]: https://en.wikipedia.org/wiki/Text_editor
 [Jupyter Notebooks]: https://jupyter.org/
 [Visual Studio Code]: https://code.visualstudio.com/
