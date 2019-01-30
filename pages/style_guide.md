@@ -83,7 +83,7 @@ Use separate lines for imports from separate modules, for example:
   from random import *
   ```
 
-### Naming conventions
+### Naming Conventions
 
 Variables, functions, module names, package names - use lower-case letters, plus underscores as needed to improve readability. It's okay to include numbers in names, ifn it makes sense to do so. Avoid using capital letters in these names.
 
