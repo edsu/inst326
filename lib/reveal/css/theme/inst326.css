@@ -161,6 +161,17 @@ body {
   max-height: 400px;
   word-wrap: normal; }
 
+.reveal pre.numberLines code {
+  display: inline;
+  padding: 0px;
+}
+
+.reveal a.sourceLine::before {
+    text-decoration: none; }
+
+.reveal pre code a {
+  text-decoration: none; }
+
 .reveal table {
   margin: auto;
   border-collapse: collapse;
