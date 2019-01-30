@@ -33,7 +33,7 @@ Meaningful variable and function names - any variables or functions that you cre
 
 Unless otherwise instructed, please perform all meaningful computation inside functions or classes. Use of functions and classes facilitates testing and code reuse.
 
-### Global variables 
+### Global Variables 
 
 Global variables should only be used for constant values. Variables whose values will change over the course of the program should be defined within functions, methods, or classes and passed as arguments to other functions or methods as needed. 
 

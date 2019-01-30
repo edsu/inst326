@@ -1,4 +1,7 @@
-# InstallFest!
+---
+title: InstallFest!
+css: ../../../css/page.css
+---
 
 Historically, [InstallFests] were community events where computer enthusiasts would get together to install the Linux operating system. It wasn't trivial to install Linux when it first started to get popular in the 1990s. So it was much easier if you had the help from others when you first tried to get it running. The term open source got popularized to mean really any kind of computing event where a group of people installed [open source] software.
 
