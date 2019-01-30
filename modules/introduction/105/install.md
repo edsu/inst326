@@ -37,7 +37,7 @@ https://code.visualstudio.com/
 
 After you've installed Code, start it up and install the Python extension by going to *Preferences* -> *Extensions* and then search for "Python". You should see the *Python Extension* from Microsoft which you can install. When it prompts you which Python to use select the version we just installed v3.7.2.
 
-### Hello World
+## Hello World
 
 If you have time see if you can figure out how to create your first program in Code:
 
