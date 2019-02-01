@@ -1,7 +1,8 @@
-all: 101 105
+all: sp2019-101.pdf sp2019-105.pdf
 
-101:
+sp2019-101.pdf: sp2019-101.tex
 	pdflatex sp2019-101.tex > /dev/null
 	rm *.out *.log *.aux
-105:
+
+sp2019-105.pdf: sp2019-105.md
 	pandoc --pdf-engine=xelatex sp2019-105.md -o sp2019-105.pdf
