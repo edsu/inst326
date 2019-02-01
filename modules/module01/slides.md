@@ -195,7 +195,7 @@ Operators behave differently depending on the *type*:
 Try these statements to input and print a variable:
 
 ~~~~ {.python .numberLines}
-username = input('Enter your name: ")
+username = input("Enter your name: ")
 print("Hello", username)
 ~~~~
 
@@ -234,11 +234,11 @@ else:
 order = input("What can I get you? ")
 
 if order == "burger":
-    side = input("Would you like fries?")
-elif order == 'salad':
-    side = input("What kind of dressing?")
+    side = input("Would you like fries? ")
+elif order == "salad':
+    side = input("What kind of dressing? ")
 else:
-    print("We only sell burgers and salads")
+    print("We only sell burgers and salads.")
 
 print("You ordered:", order, side)
 
