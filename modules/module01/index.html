@@ -99,152 +99,173 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <p class="subtitle">Variables, Expressions, Statements, Conditionals</p>
 </section>
 
-<section id="topic-overview" class="slide level1">
-<h1>Topic Overview</h1>
-<ul>
-<li>basic building blocks of Python programs</li>
-<li>a lot of content, but hopefully familiar already</li>
-</ul>
-<div>
-<ul>
-<li class="fragment">Variables</li>
-<li class="fragment">Expressions</li>
-<li class="fragment">Statements</li>
-<li class="fragment">Conditionals</li>
-</ul>
+<section id="section" class="slide level1">
+<h1></h1>
+<div class="left">
+<p>Python is an <a href="https://en.wikipedia.org/wiki/Imperative_programming">imperative</a> programming language. Your programs are a series of <strong>Statements</strong> that are executed in order.</p>
+<p>Each <strong>Statement</strong> can be made up of <strong>Variables</strong> and <strong>Expressions</strong>.</p>
+<p><strong>Conditional Statements</strong> change the execution of your program depending on the state of <strong>Variables</strong> and <strong>Expressions</strong>.</p>
 </div>
-</section>
-<section id="variables" class="slide level1">
-<h1>Variables</h1>
-<p>:::</p>
+<div class="fragment">
+<hr />
+<p><em>This is a lot, so let’s unpack it.</em></p>
+</div>
 </section>
 <section id="what-are-variables" class="slide level1">
 <h1>What are Variables?</h1>
+<p class="left">
+Variables are <em>names</em> that can be attached to <em>data</em>. Each variable has a <em>type</em>:
+</p>
+<div>
 <ul>
-<li>Variables are labels that can be attached to data</li>
-<li>Each piece of data also has a type</li>
-<li>At the most basic level the types are
-<ul>
-<li>Numbers</li>
-<li>Strings</li>
-<li>Booleans (True/False)</li>
-</ul></li>
-<li>The type can be thought of like a box that contains the data</li>
-<li>Numbers can be further distinguished between
-<ul>
-<li>Integers</li>
-<li>Floats (i.e. decimals)</li>
-</ul></li>
-<li>There are other, more complex data containers (e.g. lists, dictionaries) that will be introduced later</li>
+<li class="fragment">Integer: x = 1</li>
+<li class="fragment">Float: x = 1.5</li>
+<li class="fragment">String: x = “umd”</li>
+<li class="fragment">Boolean: x = True</li>
 </ul>
-<p>:::</p>
-<h2 id="working-with-variables">Working with Variables</h2>
-<ul>
-<li>There are two main actions we take with variables:
-<ul>
-<li>assignment (attach a name to some data)</li>
-<li>reading/evaluation (lookup the data by its name)</li>
-</ul></li>
-</ul>
-<p>:::</p>
-<h2 id="practice-with-variables">Practice with Variables</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># here&#39;s an example of working with variables</span></a>
-<a class="sourceLine" id="cb1-2" title="2"></a>
-<a class="sourceLine" id="cb1-3" title="3">x <span class="op">=</span> <span class="st">&quot;Hello World&quot;</span>   <span class="co"># assignment</span></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="bu">print</span>(x)            <span class="co"># reading/evaluation</span></a></code></pre></div>
-<p>:::</p>
+</div>
+<p class="left fragment">
+We’ll be talking about more complex types (e.g. <em>lists</em>, <em>dictionaries</em>, <em>sets</em>) and even how to create your own over the course of the semester.
+</p>
 </section>
-<section id="expressions" class="slide level1">
-<h1>Expressions</h1>
-<p>:::</p>
-<h2 id="what-are-expressions">What are Expressions?</h2>
+<section id="working-with-variables" class="slide level1">
+<h1>Working with Variables</h1>
+<p>There are two main actions we take with variables:</p>
 <ul>
-<li>Expressions are pieces of python code that get <em>evaluated</em> rather than executed</li>
-<li>Expressions are often created with operators that represent mathematical or logical operations:
+<li><em>assignment</em>: attach a name to some data</li>
+<li><em>evaluation</em>: lookup the data by its name</li>
+</ul>
+</section>
+<section id="practice-with-variables" class="slide level1">
+<h1>Practice with Variables</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># assignment</span></a>
+<a class="sourceLine" id="cb1-2" title="2">x <span class="op">=</span> <span class="st">&quot;Hello World&quot;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># evaluation</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="bu">print</span>(x) </a></code></pre></div>
+<div class="fragment">
+<p>Notice the use of comments on lines 1 and 4?</p>
+</div>
+</section>
+<section id="what-are-expressions" class="slide level1">
+<h1>What are Expressions?</h1>
+<p>Expressions are pieces of Python that get <em>evaluated</em>, and are often created with <em>operators</em>:</p>
+<div class="columns">
+<div class="column">
 <ul>
 <li>addition (+)</li>
 <li>subtraction (-)</li>
 <li>multiplication (*)</li>
 <li>division (/)</li>
+</ul>
+</div><ul>
 <li>integer division (//)</li>
 <li>modulo (%)</li>
 <li>exponentiation (**)</li>
 <li>equality (==)</li>
-</ul></li>
-<li>Operators are applied according to order of operations (PEMDAS)</li>
 </ul>
-<p>:::</p>
-<h2 id="practice-with-variables-1">Practice with Variables</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># examples of working with expressions</span></a>
-<a class="sourceLine" id="cb2-2" title="2"></a>
-<a class="sourceLine" id="cb2-3" title="3">x <span class="op">=</span> <span class="dv">2</span>   <span class="co"># assignment</span></a>
-<a class="sourceLine" id="cb2-4" title="4">y <span class="op">=</span> <span class="dv">7</span></a>
-<a class="sourceLine" id="cb2-5" title="5">x <span class="op">*</span> x</a>
-<a class="sourceLine" id="cb2-6" title="6">x <span class="op">**</span> <span class="dv">2</span></a>
-<a class="sourceLine" id="cb2-7" title="7">x <span class="op">==</span> y</a>
-<a class="sourceLine" id="cb2-8" title="8">y <span class="op">-</span> x</a>
-<a class="sourceLine" id="cb2-9" title="9">y <span class="op">-</span> x <span class="op">+</span> <span class="dv">4</span></a>
-<a class="sourceLine" id="cb2-10" title="10"><span class="dv">2</span> <span class="op">+</span> x <span class="op">**</span> <span class="dv">3</span></a>
-<a class="sourceLine" id="cb2-11" title="11">(<span class="dv">2</span> <span class="op">+</span> x) <span class="op">**</span> <span class="dv">3</span></a>
-<a class="sourceLine" id="cb2-12" title="12">y <span class="op">//</span> x</a>
-<a class="sourceLine" id="cb2-13" title="13">y <span class="op">/</span> x</a>
-<a class="sourceLine" id="cb2-14" title="14">y <span class="op">%</span> x</a></code></pre></div>
-<p>:::</p>
-<h2 id="operators-and-data-types">Operators and Data Types</h2>
-<ul>
-<li>The type of data they are applied to has an impact on meaning</li>
-<li>Specifically, these operators have a different meaning when applied to strings:
-<ul>
-<li>concatenation (+)</li>
-<li>repetition (*)</li>
-</ul></li>
-</ul>
-<p>:::</p>
+</div>
+<p>Remember order of operations: <a href="https://www.mathsisfun.com/operation-order-pemdas.html">PEMDAS</a></p>
 </section>
-<section id="statements" class="slide level1">
-<h1>Statements</h1>
-<p>:::</p>
+<section id="practice-with-expressions" class="slide level1">
+<h1>Practice with Expressions</h1>
+</section>
+<section id="section-1" class="slide level1">
+<h1></h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">x <span class="op">=</span> <span class="dv">2</span> </a>
+<a class="sourceLine" id="cb2-2" title="2">x <span class="op">*</span> x</a></code></pre></div>
+<div class="fragment">
+<p><strong>4</strong></p>
+</div>
+</section>
+<section id="section-2" class="slide level1">
+<h1></h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">x <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb3-2" title="2">x <span class="op">**</span> <span class="dv">3</span></a></code></pre></div>
+<div class="fragment">
+<p><strong>8</strong></p>
+</div>
+</section>
+<section id="section-3" class="slide level1">
+<h1></h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">x <span class="op">=</span> <span class="dv">2</span> </a>
+<a class="sourceLine" id="cb4-2" title="2">y <span class="op">=</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb4-3" title="3">x <span class="op">==</span> y</a></code></pre></div>
+<div class="fragment">
+<p><strong>False</strong></p>
+</div>
+</section>
+<section id="section-4" class="slide level1">
+<h1></h1>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">x <span class="op">=</span> <span class="dv">80</span></a>
+<a class="sourceLine" id="cb5-2" title="2">y <span class="op">=</span> <span class="dv">30</span></a>
+<a class="sourceLine" id="cb5-3" title="3">x <span class="op">-</span> y</a></code></pre></div>
+<div class="fragment">
+<p><strong>50</strong></p>
+</div>
+</section>
+<section id="section-5" class="slide level1">
+<h1></h1>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">x <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb6-2" title="2">y <span class="op">=</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb6-3" title="3">y <span class="op">-</span> x <span class="op">+</span> <span class="dv">4</span></a></code></pre></div>
+<div class="fragment">
+<p><strong>5</strong></p>
+</div>
+</section>
+<section id="section-6" class="slide level1">
+<h1></h1>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">x <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="dv">2</span> <span class="op">+</span> x <span class="op">**</span> <span class="dv">3</span></a></code></pre></div>
+<div class="fragment">
+<p><strong>10</strong></p>
+</div>
+</section>
+<section id="section-7" class="slide level1">
+<h1></h1>
+<p>Operators behave differently depending on the <em>type</em>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="co">&quot;u&quot;</span> <span class="op">+</span> <span class="st">&quot;m&quot;</span> <span class="op">+</span> <span class="st">&quot;d&quot;</span></a></code></pre></div>
+<div class="fragment">
+<p><strong>umd</strong></p>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="co">&quot;umd &quot;</span> <span class="op">*</span> <span class="dv">5</span></a></code></pre></div>
+</div>
+<div class="fragment">
+<p><strong>umd umd umd umd umd</strong></p>
+</div>
 </section>
 <section id="what-are-statements" class="slide level1">
 <h1>What are Statements?</h1>
 <ul>
-<li>Statements are the most basic units of executable Python code</li>
-<li>On some level, a Python program is a series of statements executed in order</li>
-<li>In practice, it is more complicated than that, of course</li>
-<li>Two very simple but useful statements are print and input</li>
-<li>These are actually built-in functions, but we can use them to do simple input and output</li>
+<li>Statements are the most basic units of executable Python code.</li>
+<li>A Python program is a series of statements executed in order.</li>
 </ul>
-<p>:::</p>
-<h2 id="practice-with-statements">Practice with Statements</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># examples of simple Python statements</span></a>
-<a class="sourceLine" id="cb3-2" title="2"></a>
-<a class="sourceLine" id="cb3-3" title="3">::: incremental</a>
-<a class="sourceLine" id="cb3-4" title="4">x <span class="op">=</span> <span class="st">&quot;Hello&quot;</span></a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="bu">print</span>(x)</a></code></pre></div>
-<p>:::</p>
-<h2 id="practice-with-statements-1">Practice with Statements</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># examples of simple Python statements</span></a>
-<a class="sourceLine" id="cb4-2" title="2"></a>
-<a class="sourceLine" id="cb4-3" title="3">::: incremental</a>
-<a class="sourceLine" id="cb4-4" title="4">username <span class="op">=</span> <span class="bu">input</span>(<span class="st">&#39;Enter your name: &quot;)</span></a>
-<a class="sourceLine" id="cb4-5" title="5"><span class="st">print(&quot;Hello&quot;, username)</span></a></code></pre></div>
-<p>:::</p>
 </section>
-<section id="conditionals" class="slide level1">
-<h1>Conditionals</h1>
-<p>:::</p>
+<section id="section-8" class="slide level1">
+<h1></h1>
+<p>Try these statements to input and print a variable:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">username <span class="op">=</span> <span class="bu">input</span>(<span class="st">&#39;Enter your name: &quot;)</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="st">print(&quot;Hello&quot;, username)</span></a></code></pre></div>
 </section>
 <section id="what-are-conditionals" class="slide level1">
 <h1>What are Conditionals?</h1>
 <ul>
-<li>In practice, you often do not want every statement in a program to be executed every time</li>
-<li>Instead, you want to build branching logic that causes different statements to be executed depending on the state of data or input at execution time</li>
-<li>The basic building blocks for this logic are conditionals, which are constructed with the keywords “if”, “elif” and “else”</li>
+<li>In practice, you often do not want every <em>statement</em> in a program to be executed every time.</li>
+<li>Instead, you want your program to execute depending on the logical state of data or input when your program is running.</li>
+<li>The basic building blocks for this logic are conditionals, which are constructed with the keywords <em>if</em>, <em>else</em> and <em>elif</em>.</li>
 </ul>
-<p>:::</p>
 </section>
 <section id="structure-of-conditionals" class="slide level1">
 <h1>Structure of Conditionals</h1>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="cf">if</span> <span class="dv">1</span> <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="bu">print</span>(<span class="st">&quot;yes&quot;</span>)</a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb11-4" title="4">    <span class="bu">print</span>(<span class="st">&quot;no&quot;</span>)</a></code></pre></div>
+<div class="fragment">
+<p><strong>yes</strong></p>
+</div>
+<aside class="notes">
 <ul>
 <li>Conditionals are different from statements in that they are multi-statement structures of code</li>
 <li>The fist line of a conditional block begins with one of the if/elif/else keywords followed by an expression</li>
@@ -252,21 +273,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>This first line is followed by an indented block of one or more lines of code</li>
 <li>The indented block is only executed if the expression in the first line evaluates as “True”</li>
 </ul>
-<p>:::</p>
-<h2 id="practice-with-conditionals">Practice with Conditionals</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># an example of branching logic</span></a>
-<a class="sourceLine" id="cb5-2" title="2"></a>
-<a class="sourceLine" id="cb5-3" title="3">::: incremental</a>
-<a class="sourceLine" id="cb5-4" title="4"></a>
-<a class="sourceLine" id="cb5-5" title="5">order <span class="op">=</span> <span class="bu">input</span>(<span class="st">&#39;What can I get you? &quot;)</span></a>
-<a class="sourceLine" id="cb5-6" title="6"><span class="st">if order == &#39;</span>burger<span class="st">&#39;:</span></a>
-<a class="sourceLine" id="cb5-7" title="7"><span class="st">    side = input(&#39;</span>Would you like fries <span class="cf">with</span> that?<span class="st">&#39;)</span></a>
-<a class="sourceLine" id="cb5-8" title="8"><span class="st">elif order == &#39;</span>salad<span class="st">&#39;:</span></a>
-<a class="sourceLine" id="cb5-9" title="9"><span class="st">    side = input(&#39;</span>What kind of dressing?<span class="st">&#39;)</span></a>
-<a class="sourceLine" id="cb5-10" title="10"><span class="st">else:</span></a>
-<a class="sourceLine" id="cb5-11" title="11"><span class="st">    print(&#39;</span>We only sell burgers <span class="kw">and</span> salads<span class="st">&#39;)</span></a>
-<a class="sourceLine" id="cb5-12" title="12"><span class="st">print(&#39;</span>You ordered:<span class="st">&#39;, order, side)</span></a></code></pre></div>
-<p>:::</p>
+</aside>
+</section>
+<section id="practice-with-conditionals" class="slide level1">
+<h1>Practice with Conditionals</h1>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">order <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;What can I get you? &quot;</span>)</a>
+<a class="sourceLine" id="cb12-2" title="2"></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="cf">if</span> order <span class="op">==</span> <span class="st">&quot;burger&quot;</span>:</a>
+<a class="sourceLine" id="cb12-4" title="4">    side <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Would you like fries?&quot;</span>)</a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="cf">elif</span> order <span class="op">==</span> <span class="st">&#39;salad&#39;</span>:</a>
+<a class="sourceLine" id="cb12-6" title="6">    side <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;What kind of dressing?&quot;</span>)</a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb12-8" title="8">    <span class="bu">print</span>(<span class="st">&quot;We only sell burgers and salads&quot;</span>)</a>
+<a class="sourceLine" id="cb12-9" title="9"></a>
+<a class="sourceLine" id="cb12-10" title="10"><span class="bu">print</span>(<span class="st">&quot;You ordered:&quot;</span>, order, side)</a></code></pre></div>
+</section>
+<section id="so" class="slide level1">
+<h1>So …</h1>
+<p class="left">
+We’ve covered a lot but now you know the basic buiding blocks of all Python programs, and <a href="https://en.wikipedia.org/wiki/Imperative_programming">imperative</a> programming languages in general:
+</p>
+<ul>
+<li>Statements</li>
+<li>Variables</li>
+<li>Types</li>
+<li>Operators</li>
+<li>Expressions</li>
+<li>Conditionals</li>
+</ul>
 </section>
     </div>
   </div>

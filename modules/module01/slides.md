@@ -6,164 +6,219 @@ theme: inst326
 transition: slide
 ---
 
-# Topic Overview
+# 
 
-* basic building blocks of Python programs
-* a lot of content, but hopefully familiar already
+::: {.left}
+Python is an [imperative] programming language. Your programs are a series
+of **Statements** that are executed in order.
 
-::: incremental
+Each **Statement** can be made up of
+**Variables** and **Expressions**.
 
-* Variables
-* Expressions
-* Statements
-* Conditionals
-
+**Conditional Statements** change the execution
+of your program depending on the state of **Variables** and **Expressions**.
 :::
 
-# Variables 
+::: fragment
+
+---
+*This is a lot, so let's unpack it.*
 
 :::
 
 # What are Variables?
 
-* Variables are labels that can be attached to data
-* Each piece of data also has a type
-* At the most basic level the types are
-    - Numbers
-    - Strings
-    - Booleans (True/False)
-* The type can be thought of like a box that contains the data
-* Numbers can be further distinguished between
-    - Integers
-    - Floats (i.e. decimals)
-* There are other, more complex data containers (e.g. lists, dictionaries) that will be introduced later
+<p class="left">
+Variables are *names* that can be attached to *data*. Each variable has a *type*:
+</p>
+
+::: incremental
+
+* Integer: x = 1
+* Float: x = 1.5
+* String: x = "umd"
+* Boolean: x = True
 
 :::
 
-## Working with Variables
+<p class="left fragment">
+We'll be talking about more complex types (e.g. *lists*, *dictionaries*, *sets*) and 
+even how to create your own over the course of the semester.
+</p>
 
-* There are two main actions we take with variables:
-    - assignment (attach a name to some data)
-    - reading/evaluation (lookup the data by its name)
+# Working with Variables
 
-::: 
+There are two main actions we take with variables:
 
-## Practice with Variables
+* *assignment*: attach a name to some data
+* *evaluation*: lookup the data by its name
+
+# Practice with Variables
 
 ~~~~ {.python .numberLines}
-# here's an example of working with variables
+# assignment
+x = "Hello World"
 
-x = "Hello World"   # assignment
-print(x)            # reading/evaluation
+# evaluation
+print(x) 
 ~~~~
 
-::: 
+::: fragment
+Notice the use of comments on lines 1 and 4?
+:::
 
-# Expressions
+# What are Expressions?
+
+Expressions are pieces of Python that get *evaluated*, and are often 
+created with *operators*: 
+
+::: columns 
+
+:::: column
+
+- addition (+)
+- subtraction (-)
+- multiplication (\*)
+- division (/)
+
+::::
+
+- integer division (//)
+- modulo (%)
+- exponentiation (**)
+- equality (==)
 
 :::
 
-## What are Expressions?
+Remember order of operations: [PEMDAS](https://www.mathsisfun.com/operation-order-pemdas.html)
 
-* Expressions are pieces of python code that get _evaluated_ rather than executed
-* Expressions are often created with operators that represent mathematical or logical operations:
-    - addition (+)
-    - subtraction (-)
-    - multiplication (\*)
-    - division (/)
-    - integer division (//)
-    - modulo (%)
-    - exponentiation (**)
-    - equality (==)
-* Operators are applied according to order of operations (PEMDAS)
+# Practice with Expressions
 
-:::
+# 
 
-## Practice with Variables
-
-~~~~ {.python .numberLines}
-# examples of working with expressions
-
-x = 2   # assignment
-y = 7
+~~~ {.python .numberLines}
+x = 2 
 x * x
-x ** 2
+~~~
+
+::: fragment
+**4**
+:::
+
+# 
+
+~~~ {.python .numberLines}
+x = 2
+x ** 3
+~~~ 
+
+::: fragment
+**8**
+:::
+
+#
+
+~~~ {.python .numberLines}
+x = 2 
+y = 3
 x == y
-y - x
+~~~
+
+::: fragment
+**False**
+:::
+
+# 
+
+~~~ {.python .numberLines}
+x = 80
+y = 30
+x - y
+~~~
+
+::: fragment
+**50**
+:::
+
+#
+
+~~~ {.python .numberLines}
+x = 2
+y = 3
 y - x + 4
+~~~
+
+::: fragment
+**5**
+:::
+
+# 
+
+~~~ {.python .numberLines}
+x = 2
 2 + x ** 3
-(2 + x) ** 3
-y // x
-y / x
-y % x
+~~~
 
-~~~~
-
+::: fragment
+**10**
 :::
 
-## Operators and Data Types
+# 
 
-* The type of data they are applied to has an impact on meaning
-* Specifically, these operators have a different meaning when applied to strings:
-    - concatenation (+)
-    - repetition (*)
+Operators behave differently depending on the *type*:
 
+``` python
+"u" + "m" + "d"
+```
+
+::: {.fragment}
+**umd**
 :::
 
-# Statements 
+::: fragment
+```python
+"umd " * 5
+```
+:::
 
+::: fragment
+**umd umd umd umd umd**
 :::
 
 # What are Statements?
 
-* Statements are the most basic units of executable Python code
-* On some level, a Python program is a series of statements executed in order
-* In practice, it is more complicated than that, of course
-* Two very simple but useful statements are print and input
-* These are actually built-in functions, but we can use them to do simple input and output
+* Statements are the most basic units of executable Python code.
+* A Python program is a series of statements executed in order.
 
-::: 
+#
 
-## Practice with Statements
+Try these statements to input and print a variable:
 
 ~~~~ {.python .numberLines}
-# examples of simple Python statements
-
-::: incremental
-x = "Hello"
-print(x)
-
-~~~~
-
-:::
-
-## Practice with Statements
-
-~~~~ {.python .numberLines}
-# examples of simple Python statements
-
-::: incremental
 username = input('Enter your name: ")
 print("Hello", username)
-
 ~~~~
-
-:::
-
-# Conditionals 
-
-:::
 
 # What are Conditionals?
 
-* In practice, you often do not want every statement in a program to be executed every time
-* Instead, you want to build branching logic that causes different statements to be executed depending on the state of data or input at execution time
-* The basic building blocks for this logic are conditionals, which are constructed with the keywords "if", "elif" and "else"
-
-:::
+* In practice, you often do not want every *statement* in a program to be executed every time.
+* Instead, you want your program to execute depending on the logical state of data or input when your program is running.
+* The basic building blocks for this logic are conditionals, which are constructed with the keywords *if*, *else* and *elif*.
 
 # Structure of Conditionals
 
+``` {.python .numberLines}
+if 1 > 0:
+    print("yes")
+else:
+    print("no")
+```
+
+::: fragment
+**yes**
+:::
+
+::: notes
 * Conditionals are different from statements in that they are multi-statement structures of code
 * The fist line of a conditional block begins with one of the if/elif/else keywords followed by an expression
 * The first line ends with a colon
@@ -172,22 +227,35 @@ print("Hello", username)
 
 :::
 
-## Practice with Conditionals
+
+# Practice with Conditionals
 
 ~~~~ {.python .numberLines}
-# an example of branching logic
+order = input("What can I get you? ")
 
-::: incremental
-
-order = input('What can I get you? ")
-if order == 'burger':
-    side = input('Would you like fries with that?')
+if order == "burger":
+    side = input("Would you like fries?")
 elif order == 'salad':
-    side = input('What kind of dressing?')
+    side = input("What kind of dressing?")
 else:
-    print('We only sell burgers and salads')
-print('You ordered:', order, side)
+    print("We only sell burgers and salads")
+
+print("You ordered:", order, side)
 
 ~~~~
 
-:::
+# So ...
+
+<p class="left">
+We've covered a lot but now you know the basic buiding blocks of all Python
+programs, and [imperative] programming languages in general:
+</p>
+
+* Statements
+* Variables
+* Types
+* Operators 
+* Expressions
+* Conditionals
+
+[imperative]: https://en.wikipedia.org/wiki/Imperative_programming
