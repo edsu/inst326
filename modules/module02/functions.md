@@ -121,10 +121,10 @@ in:
 :::
 
 ``` {.python .numberLines}
-def circumference(r):
+def area(r):
     return 3.1415792 * r ** 2
 
-print(circumference(20))
+print(area(20))
 ```
 
 ::: fragment
