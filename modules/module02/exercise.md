@@ -1,5 +1,5 @@
 ---
-title: "Module 2 Exercises"
+title: "Module 2 Exercise"
 css: ../../css/page.css
 ---
 
