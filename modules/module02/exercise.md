@@ -17,7 +17,7 @@ while weights:
     print(kg, "kg is equal to ", joules, "joules")
 ```
 
-How would you fix it? (1 point)
+What output do you see when you fix it? (1 point)
 
 ## Extra Credit (1 point)
 
