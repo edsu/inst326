@@ -10,7 +10,7 @@ transition: slide
 
 ::: incremental
 
-* We have already introduced some of the basic building blocks of data (integers, floats, Booleans, strings)
+* We have already introduced some of the basic building blocks of data (integers, floats, booleans, strings)
 * Python also supports combining bits of data into larger _data structures_
 * You can think of the building blocks as atoms and the structures as molecules
 
@@ -47,13 +47,13 @@ transition: slide
 ## Try it out (interactive mode)
 
 ``` {.python}
->>> foo = list()
->>> type(foo)
+>>> s = "To be or not to be."
+>>> type(s)
+<class 'str'>
+>>> help(s)
 ...
->>> dir(foo)
+>>> dir(s)
 ...
->>> help(list)
-... 
 ```
 
 ---
@@ -63,6 +63,7 @@ transition: slide
 ---
 
 ## What are strings?
+
 
 ::: incremental
 
@@ -76,6 +77,10 @@ transition: slide
 ---
 
 ## Creating strings
+
+``` {.python .numberLines}
+s = "To be or not to be"
+```
 
 ::: incremental
 
@@ -101,11 +106,14 @@ transition: slide
 ::: fragment
 
 ``` {.python}
->>> x = 'Hello'
->>> x[0]
-H
+>>> x = 'To be or not to be.'
+>>> x[3]
 ```
 
+:::
+
+::: fragment
+**b**
 :::
 
 ---
@@ -117,11 +125,13 @@ H
 
 ```python
 >>> lyric = "Another one bites the dust."
->>> lyric[0:7]
-Another
->>> lyric[7:]
- one bites the dust.
+>>> lyric[12:17]
 ```
+
+::: fragment
+**bites**
+:::
+
 ---
 
 ## "Modifying" strings
@@ -139,13 +149,12 @@ Another
 >>> x = 'hello'
 >>> x = x.upper()  # reassigns x 
 >>> print(x)
-HELLO
 ```
 
 :::
 
-::: {.left .fragment}
-"HELLO" is a new string, and the original "hello" has not changed (though it may no longer be reference by any variable).
+::: fragment
+**HELLO**
 :::
 
 ---
@@ -238,6 +247,17 @@ for color in colors:
     print(color)
 ```
 
+::: fragment
+
+```
+red
+green
+blue
+black
+```
+
+:::
+
 ---
 
 ## Modifying lists
@@ -256,9 +276,12 @@ for color in colors:
 x = ['hello', 'world']
 x[1] = 'universe'
 print(x)
-['hello', 'universe']
 ```
 
+:::
+
+::: fragment
+**['hello', 'universe']**
 :::
 
 ---
