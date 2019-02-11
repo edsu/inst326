@@ -226,7 +226,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <h2 id="string-methods">String Methods</h2>
 <div class="left">
-<p><a href="https://docs.python.org/3/library/string.html">Strings</a> have lots of useful methods like <em>upper()</em> which you just saw. Here are a few, but use <em>dir</em> and <em>help</em> to learn about them.</p>
+<p><a href="https://docs.python.org/3/library/string.html">Strings</a> have lots of useful methods like <em>upper()</em> which you just saw. Here are a few more, but try using <em>dir</em> and <em>help</em> to learn about them.</p>
 </div>
 <div class="columns">
 <div class="column">
@@ -282,11 +282,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div>
 <ul>
 <li class="fragment">Like strings, lists are an ordered sequence</li>
-<li class="fragment">Like strings, elements can be accessed by index position</li>
-<li class="fragment">Like strings, lists can be sliced</li>
-<li class="fragment">Use len() to find out how many elements are in a list</li>
+<li class="fragment">Like strings, elements can be accessed by index position: <code>my_list[2]</code></li>
+<li class="fragment">Like strings, lists can be sliced: <code>my_list[2:5]</code></li>
+<li class="fragment">Use <strong>len()</strong> to find out how many elements are in a list: <code>len(my_list)</code></li>
 </ul>
 </div>
+</section>
+<section class="slide level1">
+
+<h2 id="loops-and-lists">Loops and Lists</h2>
+<p>And the <strong>for loop</strong> is super handy for operating on lists:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">colors <span class="op">=</span> [<span class="st">&quot;red&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;black&quot;</span>]</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="cf">for</span> color <span class="kw">in</span> colors:</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="bu">print</span>(color)</a></code></pre></div>
 </section>
 <section class="slide level1">
 
@@ -298,10 +306,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">x <span class="op">=</span> [<span class="st">&#39;hello&#39;</span>, <span class="st">&#39;world&#39;</span>]</a>
-<a class="sourceLine" id="cb5-2" title="2">x[<span class="dv">1</span>] <span class="op">=</span> <span class="st">&#39;universe&#39;</span></a>
-<a class="sourceLine" id="cb5-3" title="3"><span class="bu">print</span>(x)</a>
-<a class="sourceLine" id="cb5-4" title="4">[<span class="st">&#39;hello&#39;</span>, <span class="st">&#39;universe&#39;</span>]</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">x <span class="op">=</span> [<span class="st">&#39;hello&#39;</span>, <span class="st">&#39;world&#39;</span>]</a>
+<a class="sourceLine" id="cb6-2" title="2">x[<span class="dv">1</span>] <span class="op">=</span> <span class="st">&#39;universe&#39;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="bu">print</span>(x)</a>
+<a class="sourceLine" id="cb6-4" title="4">[<span class="st">&#39;hello&#39;</span>, <span class="st">&#39;universe&#39;</span>]</a></code></pre></div>
 </div>
 </section>
 <section class="slide level1">

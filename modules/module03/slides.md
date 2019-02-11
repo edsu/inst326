@@ -155,8 +155,8 @@ HELLO
 ::: left
 
 [Strings](https://docs.python.org/3/library/string.html) have lots of useful
-methods like *upper()* which you just saw.  Here are a few, but use *dir* and
-*help* to learn about them.
+methods like *upper()* which you just saw.  Here are a few more, but try using
+*dir* and *help* to learn about them.
 
 :::
 
@@ -220,11 +220,23 @@ methods like *upper()* which you just saw.  Here are a few, but use *dir* and
 ::: incremental
 
 * Like strings, lists are an ordered sequence
-* Like strings, elements can be accessed by index position
-* Like strings, lists can be sliced
-* Use len() to find out how many elements are in a list
+* Like strings, elements can be accessed by index position: `my_list[2]`
+* Like strings, lists can be sliced: `my_list[2:5]`
+* Use **len()** to find out how many elements are in a list: `len(my_list)`
 
 :::
+
+---
+
+## Loops and Lists
+
+And the **for loop** is super handy for operating on lists:
+
+``` {.python .numberLines}
+colors = ["red", "green", "blue", "black"]
+for color in colors:
+    print(color)
+```
 
 ---
 
