@@ -56,14 +56,9 @@ transition: slide
 ...
 ```
 
----
-
 # Strings
 
----
-
-## What are strings?
-
+# What are strings?
 
 ::: incremental
 
@@ -191,8 +186,6 @@ methods like *upper()* which you just saw.  Here are a few more, but try using
 
 :::
 
----
-
 # Lists
 
 ---
@@ -286,11 +279,13 @@ print(x)
 
 ---
 
-## Exercise!
+# Exercise!
 
 ---
 
 # Dictionaries
+
+<img width="70%" src="images/dictionary.jpg">
 
 ---
 
@@ -308,16 +303,16 @@ print(x)
 
 ## Creating dictionaries
 
-::: incremental
+Create a dictionary with dict() or with curly braces:
 
-* Create a dictionary with dict() or with curly braces (empty or not)
-  * x = dict()
-  * x = {}
-  * x = {'Bruce Banner': '555-555-1234', 'Sue Storm': '555-555-5678'}
-* Notice how the keys and values are delimited by a colon
-* And how the key/value pairs are separated by commas
-
-:::
+``` {.python .numberLines}
+my_dictionary = dict()
+my_dictionary = {}
+phone_book = {
+    'Bruce Banner': '555-555-1234',
+    'Sue Storm': '555-555-5678'
+}
+```
 
 ---
 
@@ -325,28 +320,117 @@ print(x)
 
 ::: incremental
 
-* 
+* You can look up the values in a dictionary by referencing the key
+
+:::
+
+::: fragment
+
+``` {.python .numberLines}
+phone_book = {
+    'Bruce Banner': '555-555-1234',
+    'Sue Storm': '555-555-5678'
+}
+print(phone_book['Bruce Banner'])
+```
+:::
+
+::: fragment
+**555-555-1234**
+:::
+
+---
+
+## Accessing dictionaries (more)
+
+You can access the keys of a dictionary with the **keys()** method:
+
+``` {.python .numberLines}
+phone_book = {
+    'Bruce Banner': '555-555-1234',
+    'Sue Storm': '555-555-5678'
+}
+for k in phone_book.keys():
+    print(k)
+```
+
+::: fragment
+**Bruce Banner**  
+**Sue Storm**
+:::
+
+---
+
+You can access the values of a dictionary with the **values()** method:
+
+``` {.python .numberLines}
+phone_book = {
+    'Bruce Banner': '555-555-1234',
+    'Sue Storm': '555-555-5678'
+}
+for val in phone_book.values():
+    print(val)
+```
+
+::: fragment
+**555-555-1234**  
+**555-555-5678**
+:::
+
+---
+
+Or, you can access all the key/value pairs with the **items()** method
+
+``` {.python .numberLines}
+phone_book = {
+    'Bruce Banner': '555-555-1234',
+    'Sue Storm': '555-555-5678'
+}
+for key, val in phone_book.values():
+    print(key, val)
+```
+
+::: fragment
+**Bruce Banner 555-555-1234**  
+**Sue Storm 555-555-5678**
+:::
+
+---
+
+## Modifying dictionaries
+
+::: incremental
+
+* The keys of a dictionary can be assigned to different values directly
+
+::: fragment
+
+``` {.python .numberLines}
+phone_book['Bruce Banner'] = "555-555-9876"
+```
+
+:::
+
+* If the key does not exist, a new key/value pair will be added
+* Note that each key of a given dictionary must be unique
 
 :::
 
 ---
 
-## "Modifying" dictionaries
+## Deleting from a dictionary
 
-::: incremental
+You can remove a key/value pair from a dictionary by using the **pop** method:
 
-* 
-
-:::
-
+``` {.python .numberLines}
+phone_book = {
+    'Bruce Banner': '555-555-1234',
+    'Sue Storm': '555-555-5678'
+}
+phone_book.pop('Bruce Banner')
+```
 
 # Tuples
-
-::: incremental
-
-* 
-
-:::
 
 ---
 
@@ -354,7 +438,9 @@ print(x)
 
 ::: incremental
 
-* 
+* Tuples are ordered, immutable sequences of other objects
+* You will hear tuple pronounced both "too-pull" and "tuh-pull"
+* Contrary to how the name sounds, tuples can have any number of elements (not just two!)
 
 :::
 
@@ -364,7 +450,10 @@ print(x)
 
 ::: incremental
 
-* 
+* Tuples can be created with tuple()
+* Tuples are also often created with parentheses
+  - x = ('foo', 'bar')
+* But in fact, the comma is what allows python to recognize the tuple
 
 :::
 
@@ -374,7 +463,18 @@ print(x)
 
 ::: incremental
 
-* 
+* Similar to lists, the items in a tuple are accessed by index position
+* A common pattern is to assign the elements of tuples in a single line
+* For example, the .values() method of dictionaries returns key/value pairs as a tuple:
+
+:::
+
+::: fragment
+
+``` {.python .numberLines}
+for name, number in phone_book.items():
+    print(name, number)
+```
 
 :::
 
@@ -384,11 +484,12 @@ print(x)
 
 ::: incremental
 
-* 
+* Like strings, tuples are immutable
+* If you try to reassign a value inside a tuple, Python will raise a type error
 
 :::
 
 ---
 
-# Questions?
+# Exercise!
 

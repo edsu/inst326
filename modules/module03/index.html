@@ -150,9 +150,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="strings" class="slide level1">
 <h1>Strings</h1>
 </section>
-<section class="slide level1">
-
-<h2 id="what-are-strings">What are strings?</h2>
+<section id="what-are-strings" class="slide level1">
+<h1>What are strings?</h1>
 <div>
 <ul>
 <li class="fragment">Strings are textual data</li>
@@ -322,12 +321,12 @@ black</code></pre>
 <p><strong>[‘hello’, ‘universe’]</strong></p>
 </div>
 </section>
-<section class="slide level1">
-
-<h2 id="exercise">Exercise!</h2>
+<section id="exercise" class="slide level1">
+<h1>Exercise!</h1>
 </section>
 <section id="dictionaries" class="slide level1">
 <h1>Dictionaries</h1>
+<p><img width="70%" src="images/dictionary.jpg"></p>
 </section>
 <section class="slide level1">
 
@@ -343,51 +342,113 @@ black</code></pre>
 <section class="slide level1">
 
 <h2 id="creating-dictionaries">Creating dictionaries</h2>
-<div>
-<ul>
-<li class="fragment">Create a dictionary with dict() or with curly braces (empty or not)
-<ul>
-<li class="fragment">x = dict()</li>
-<li class="fragment">x = {}</li>
-<li class="fragment">x = {‘Bruce Banner’: ‘555-555-1234’, ‘Sue Storm’: ‘555-555-5678’}</li>
-</ul></li>
-<li class="fragment">Notice how the keys and values are delimited by a colon</li>
-<li class="fragment">And how the key/value pairs are separated by commas</li>
-</ul>
-</div>
+<p>Create a dictionary with dict() or with curly braces:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">my_dictionary <span class="op">=</span> <span class="bu">dict</span>()</a>
+<a class="sourceLine" id="cb9-2" title="2">my_dictionary <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb9-3" title="3">phone_book <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb9-4" title="4">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
+<a class="sourceLine" id="cb9-6" title="6">}</a></code></pre></div>
 </section>
 <section class="slide level1">
 
 <h2 id="accessing-dictionaries">Accessing dictionaries</h2>
 <div>
 <ul>
-<li class="fragment"></li>
+<li class="fragment">You can look up the values in a dictionary by referencing the key</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">phone_book <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
+<a class="sourceLine" id="cb10-4" title="4">}</a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="bu">print</span>(phone_book[<span class="st">&#39;Bruce Banner&#39;</span>])</a></code></pre></div>
+</div>
+<div class="fragment">
+<p><strong>555-555-1234</strong></p>
+</div>
+</section>
+<section class="slide level1">
+
+<h2 id="accessing-dictionaries-more">Accessing dictionaries (more)</h2>
+<p>You can access the keys of a dictionary with the <strong>keys()</strong> method:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">phone_book <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
+<a class="sourceLine" id="cb11-4" title="4">}</a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="cf">for</span> k <span class="kw">in</span> phone_book.keys():</a>
+<a class="sourceLine" id="cb11-6" title="6">    <span class="bu">print</span>(k)</a></code></pre></div>
+<div class="fragment">
+<p><strong>Bruce Banner</strong><br />
+<strong>Sue Storm</strong></p>
+</div>
+</section>
+<section class="slide level1">
+
+<p>You can access the values of a dictionary with the <strong>values()</strong> method:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">phone_book <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
+<a class="sourceLine" id="cb12-3" title="3">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
+<a class="sourceLine" id="cb12-4" title="4">}</a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="cf">for</span> val <span class="kw">in</span> phone_book.values():</a>
+<a class="sourceLine" id="cb12-6" title="6">    <span class="bu">print</span>(val)</a></code></pre></div>
+<div class="fragment">
+<p><strong>555-555-1234</strong><br />
+<strong>555-555-5678</strong></p>
+</div>
+</section>
+<section class="slide level1">
+
+<p>Or, you can access all the key/value pairs with the <strong>items()</strong> method</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">phone_book <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb13-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
+<a class="sourceLine" id="cb13-3" title="3">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
+<a class="sourceLine" id="cb13-4" title="4">}</a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="cf">for</span> key, val <span class="kw">in</span> phone_book.values():</a>
+<a class="sourceLine" id="cb13-6" title="6">    <span class="bu">print</span>(key, val)</a></code></pre></div>
+<div class="fragment">
+<p><strong>Bruce Banner 555-555-1234</strong><br />
+<strong>Sue Storm 555-555-5678</strong></p>
+</div>
+</section>
+<section class="slide level1">
+
+<h2 id="modifying-dictionaries">Modifying dictionaries</h2>
+<div>
+<ul>
+<li class="fragment">The keys of a dictionary can be assigned to different values directly</li>
+</ul>
+<div class="fragment">
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">phone_book[<span class="st">&#39;Bruce Banner&#39;</span>] <span class="op">=</span> <span class="st">&quot;555-555-9876&quot;</span></a></code></pre></div>
+</div>
+<ul>
+<li class="fragment">If the key does not exist, a new key/value pair will be added</li>
+<li class="fragment">Note that each key of a given dictionary must be unique</li>
 </ul>
 </div>
 </section>
 <section class="slide level1">
 
-<h2 id="modifying-dictionaries">“Modifying” dictionaries</h2>
-<div>
-<ul>
-<li class="fragment"></li>
-</ul>
-</div>
+<h2 id="deleting-from-a-dictionary">Deleting from a dictionary</h2>
+<p>You can remove a key/value pair from a dictionary by using the <strong>pop</strong> method:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">phone_book <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb15-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
+<a class="sourceLine" id="cb15-4" title="4">}</a>
+<a class="sourceLine" id="cb15-5" title="5">phone_book.pop(<span class="st">&#39;Bruce Banner&#39;</span>)</a></code></pre></div>
 </section>
 <section id="tuples" class="slide level1">
 <h1>Tuples</h1>
-<div>
-<ul>
-<li class="fragment"></li>
-</ul>
-</div>
 </section>
 <section class="slide level1">
 
 <h2 id="what-are-tuples">What are tuples?</h2>
 <div>
 <ul>
-<li class="fragment"></li>
+<li class="fragment">Tuples are ordered, immutable sequences of other objects</li>
+<li class="fragment">You will hear tuple pronounced both “too-pull” and “tuh-pull”</li>
+<li class="fragment">Contrary to how the name sounds, tuples can have any number of elements (not just two!)</li>
 </ul>
 </div>
 </section>
@@ -396,7 +457,12 @@ black</code></pre>
 <h2 id="creating-tuples">Creating tuples</h2>
 <div>
 <ul>
-<li class="fragment"></li>
+<li class="fragment">Tuples can be created with tuple()</li>
+<li class="fragment">Tuples are also often created with parentheses
+<ul>
+<li class="fragment">x = (‘foo’, ‘bar’)</li>
+</ul></li>
+<li class="fragment">But in fact, the comma is what allows python to recognize the tuple</li>
 </ul>
 </div>
 </section>
@@ -405,8 +471,14 @@ black</code></pre>
 <h2 id="accessing-tuples">Accessing tuples</h2>
 <div>
 <ul>
-<li class="fragment"></li>
+<li class="fragment">Similar to lists, the items in a tuple are accessed by index position</li>
+<li class="fragment">A common pattern is to assign the elements of tuples in a single line</li>
+<li class="fragment">For example, the .values() method of dictionaries returns key/value pairs as a tuple:</li>
 </ul>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="cf">for</span> name, number <span class="kw">in</span> phone_book.items():</a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="bu">print</span>(name, number)</a></code></pre></div>
 </div>
 </section>
 <section class="slide level1">
@@ -414,12 +486,13 @@ black</code></pre>
 <h2 id="modifying-tuples">“Modifying” tuples</h2>
 <div>
 <ul>
-<li class="fragment"></li>
+<li class="fragment">Like strings, tuples are immutable</li>
+<li class="fragment">If you try to reassign a value inside a tuple, Python will raise a type error</li>
 </ul>
 </div>
 </section>
-<section id="questions" class="slide level1">
-<h1>Questions?</h1>
+<section id="exercise-1" class="slide level1">
+<h1>Exercise!</h1>
 </section>
     </div>
   </div>
