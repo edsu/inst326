@@ -343,7 +343,7 @@ print(phone_book['Bruce Banner'])
 
 ## Accessing dictionaries (more)
 
-You can access the keys of a dictionary with the **keys()** method:
+Access the keys of a dictionary with the **keys()** method:
 
 ``` {.python .numberLines}
 phone_book = {
@@ -361,7 +361,7 @@ for k in phone_book.keys():
 
 ---
 
-You can access the values of a dictionary with the **values()** method:
+Access the values of a dictionary with the **values()** method:
 
 ``` {.python .numberLines}
 phone_book = {
@@ -379,7 +379,7 @@ for val in phone_book.values():
 
 ---
 
-Or, you can access all the key/value pairs with the **items()** method
+Access the key/value pairs with the **items()** method:
 
 ``` {.python .numberLines}
 phone_book = {
