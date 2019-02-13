@@ -341,8 +341,6 @@ print(phone_book['Bruce Banner'])
 
 ---
 
-## Accessing dictionaries (more)
-
 Access the keys of a dictionary with the **keys()** method:
 
 ``` {.python .numberLines}
@@ -429,6 +427,30 @@ phone_book = {
 }
 phone_book.pop('Bruce Banner')
 ```
+
+---
+
+``` {.python .numberLines}
+energy = {
+  "Colorado": {
+    "solar": 16530.477,
+    "wind": 2942132.635
+  },
+  "New Jersey": {
+    "solar": 2437.768,
+    "wind": 19149.957
+  },
+  "Washington": {
+    "solar": 0.0,
+    "wind": 3538935.954
+  }
+}
+print(energy['Washington']['wind'])
+```
+
+::: fragment
+**3538935.954**
+:::
 
 # Tuples
 

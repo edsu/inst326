@@ -371,7 +371,6 @@ black</code></pre>
 </section>
 <section class="slide level1">
 
-<h2 id="accessing-dictionaries-more">Accessing dictionaries (more)</h2>
 <p>Access the keys of a dictionary with the <strong>keys()</strong> method:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">phone_book <span class="op">=</span> {</a>
 <a class="sourceLine" id="cb11-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
@@ -438,6 +437,27 @@ black</code></pre>
 <a class="sourceLine" id="cb15-4" title="4">}</a>
 <a class="sourceLine" id="cb15-5" title="5">phone_book.pop(<span class="st">&#39;Bruce Banner&#39;</span>)</a></code></pre></div>
 </section>
+<section class="slide level1">
+
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">energy <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb16-2" title="2">  <span class="st">&quot;Colorado&quot;</span>: {</a>
+<a class="sourceLine" id="cb16-3" title="3">    <span class="st">&quot;solar&quot;</span>: <span class="fl">16530.477</span>,</a>
+<a class="sourceLine" id="cb16-4" title="4">    <span class="st">&quot;wind&quot;</span>: <span class="fl">2942132.635</span></a>
+<a class="sourceLine" id="cb16-5" title="5">  },</a>
+<a class="sourceLine" id="cb16-6" title="6">  <span class="st">&quot;New Jersey&quot;</span>: {</a>
+<a class="sourceLine" id="cb16-7" title="7">    <span class="st">&quot;solar&quot;</span>: <span class="fl">2437.768</span>,</a>
+<a class="sourceLine" id="cb16-8" title="8">    <span class="st">&quot;wind&quot;</span>: <span class="fl">19149.957</span></a>
+<a class="sourceLine" id="cb16-9" title="9">  },</a>
+<a class="sourceLine" id="cb16-10" title="10">  <span class="st">&quot;Washington&quot;</span>: {</a>
+<a class="sourceLine" id="cb16-11" title="11">    <span class="st">&quot;solar&quot;</span>: <span class="fl">0.0</span>,</a>
+<a class="sourceLine" id="cb16-12" title="12">    <span class="st">&quot;wind&quot;</span>: <span class="fl">3538935.954</span></a>
+<a class="sourceLine" id="cb16-13" title="13">  }</a>
+<a class="sourceLine" id="cb16-14" title="14">}</a>
+<a class="sourceLine" id="cb16-15" title="15"><span class="bu">print</span>(energy[<span class="st">&#39;Washington&#39;</span>][<span class="st">&#39;wind&#39;</span>])</a></code></pre></div>
+<div class="fragment">
+<p><strong>3538935.954</strong></p>
+</div>
+</section>
 <section id="tuples" class="slide level1">
 <h1>Tuples</h1>
 </section>
@@ -477,8 +497,8 @@ black</code></pre>
 </ul>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="cf">for</span> name, number <span class="kw">in</span> phone_book.items():</a>
-<a class="sourceLine" id="cb16-2" title="2">    <span class="bu">print</span>(name, number)</a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="cf">for</span> name, number <span class="kw">in</span> phone_book.items():</a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="bu">print</span>(name, number)</a></code></pre></div>
 </div>
 </section>
 <section class="slide level1">

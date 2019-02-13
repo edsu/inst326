@@ -8,8 +8,6 @@ css: ../../css/page.css
    strings have a method **capitalize**, see if you can use it.
 
 2. Write a program that will let you enter a sentence and will print each word
-   out separately. Hint: use the string's **split** function together with what
-   you know about **for loops** and **lists**.
-
-
-
+   out separately with the first letter capitalized. Hint: use the string's
+   **split** function together with what you know about **for loops** and
+   **lists**.
