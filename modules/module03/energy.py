@@ -1,4 +1,8 @@
-{
+# who were the biggest producers of solar and wind in 2009
+# hint: use a loop to iterate through the dictionary and 
+# keep track of the largest number for each with a conditional
+
+energy_2009 = {
   "Mississippi": {
     "solar": 0.0, 
     "wind": 0.0

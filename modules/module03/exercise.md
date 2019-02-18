@@ -11,3 +11,7 @@ css: ../../css/page.css
    out separately with the first letter capitalized. Hint: use the string's
    **split** function together with what you know about **for loops** and
    **lists**.
+
+3. **Extra Credit**: Download the energy.py file from the Files area of ELMS
+   site and modify it to report the states with the largest wind and solar
+   generation.

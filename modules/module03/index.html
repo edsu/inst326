@@ -404,7 +404,7 @@ black</code></pre>
 <a class="sourceLine" id="cb13-2" title="2">    <span class="st">&#39;Bruce Banner&#39;</span>: <span class="st">&#39;555-555-1234&#39;</span>,</a>
 <a class="sourceLine" id="cb13-3" title="3">    <span class="st">&#39;Sue Storm&#39;</span>: <span class="st">&#39;555-555-5678&#39;</span></a>
 <a class="sourceLine" id="cb13-4" title="4">}</a>
-<a class="sourceLine" id="cb13-5" title="5"><span class="cf">for</span> key, val <span class="kw">in</span> phone_book.values():</a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="cf">for</span> key, val <span class="kw">in</span> phone_book.items():</a>
 <a class="sourceLine" id="cb13-6" title="6">    <span class="bu">print</span>(key, val)</a></code></pre></div>
 <div class="fragment">
 <p><strong>Bruce Banner 555-555-1234</strong><br />
@@ -493,7 +493,7 @@ black</code></pre>
 <ul>
 <li class="fragment">Similar to lists, the items in a tuple are accessed by index position</li>
 <li class="fragment">A common pattern is to assign the elements of tuples in a single line</li>
-<li class="fragment">For example, the .values() method of dictionaries returns key/value pairs as a tuple:</li>
+<li class="fragment">For example, the .items() method of dictionaries returns key/value pairs as a tuple:</li>
 </ul>
 </div>
 <div class="fragment">

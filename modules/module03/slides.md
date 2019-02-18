@@ -384,7 +384,7 @@ phone_book = {
     'Bruce Banner': '555-555-1234',
     'Sue Storm': '555-555-5678'
 }
-for key, val in phone_book.values():
+for key, val in phone_book.items():
     print(key, val)
 ```
 
@@ -487,7 +487,7 @@ print(energy['Washington']['wind'])
 
 * Similar to lists, the items in a tuple are accessed by index position
 * A common pattern is to assign the elements of tuples in a single line
-* For example, the .values() method of dictionaries returns key/value pairs as a tuple:
+* For example, the .items() method of dictionaries returns key/value pairs as a tuple:
 
 :::
 
