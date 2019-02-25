@@ -32,17 +32,17 @@ we looked at quickly last week.
 # 
 
 ::: {.left .smaller}
-...early nightmares of **climate crisis**...<br>
-...disagree on policy, but **climate change** is real...<br>
-...our planet from **climate change**, and ice...<br>
-...understand that **climate change** is an existential...<br>
-...know it well-paid **climate deniers** are invited...<br>
-...creeps in, allowing **climate deniers** to be...<br>
-...goal is to treat **Climate Change** like the...<br>
-...isn’t only about **climate change** - it’s...<br>
-...housing, jobs, and **climate all** without...<br>
-...delay real action on **climate change**, the more...<br>
-...they helped create: **climate change**, housing...<br>
+...early nightmares of ***climate crisis***...<br>
+...disagree on policy, but ***climate change*** is real...<br>
+...our planet from ***climate change***, and ice...<br>
+...understand that ***climate change*** is an existential...<br>
+...know it well-paid ***climate deniers*** are invited...<br>
+...creeps in, allowing ***climate deniers*** to be...<br>
+...goal is to treat ***Climate Change*** like the...<br>
+...isn’t only about ***climate change*** - it’s...<br>
+...housing, jobs, and ***climate all*** without...<br>
+...delay real action on ***climate change***, the more...<br>
+...they helped create: ***climate change***, housing...<br>
 :::
 
 ::: notes
