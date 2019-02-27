@@ -239,7 +239,7 @@ import re
 
 s = "32 Penn-Lyle Road, Princeton Jct, 08550"
 
-for s in re.findall("\d+$", s):
+for s in re.findall("\d+", s):
     print(s)
 ```
 
