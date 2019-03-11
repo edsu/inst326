@@ -208,4 +208,7 @@ This probably seems like a lot, but once you get the hang of it basic OOP can se
 - Defining Classes
 - Attributes and Methods
 - Interacting with Instances
+- [Exercise](exercise.html)
+
+
 
