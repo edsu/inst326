@@ -24,11 +24,3 @@ class Email():
             return emails.split(',')
         else:
             return None
-
-def get_emails():
-    for dirpath, dirnames, filenames in os.walk('enron-sample'):
-        for filename in filenames:
-            path = os.path.join(dirpath, filename)
-            email = Email(path)
-            print('to', email.get_to())
-            print('from', email.get_from())
