@@ -37,7 +37,7 @@ For our work with databases, we'll be using three tools:
 - runs locally and stores data in files
 - no separate database server required
 - already installed on your system (as part of Python)
-- project website: [https://www.sqlite.org](https://www.sqlite.org/index.html)
+- project website: [https://www.sqlite.org](https://sqlite.org/mostdeployed.html)
 
 :::
 
