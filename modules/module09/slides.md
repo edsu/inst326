@@ -309,7 +309,7 @@ for member in get("/members/house/md/current.json"):
     for bill in bill_data[0]['bills']:
         print(bill['title'])
         print(bill['congressdotgov_url'])
-    print(''
+    print('')
 ```
 
 #
