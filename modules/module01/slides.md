@@ -235,7 +235,7 @@ order = input("What can I get you? ")
 
 if order == "burger":
     side = input("Would you like fries? ")
-elif order == "salad':
+elif order == "salad":
     side = input("What kind of dressing? ")
 else:
     print("We only sell burgers and salads.")
